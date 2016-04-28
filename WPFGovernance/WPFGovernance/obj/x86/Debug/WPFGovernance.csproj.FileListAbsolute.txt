@@ -1,0 +1,44 @@
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\bin\Debug\WPFGovernance.exe
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\bin\Debug\WPFGovernance.pdb
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\MainWindow.baml
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\MainWindow.g.cs
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\App.g.cs
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance_MarkupCompile.cache
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance.g.resources
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance.Properties.Resources.resources
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance.csproj.GenerateResource.Cache
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance.exe
+E:\Users\admin alex\AppData\Local\Temporary Projects\WPFGovernance\obj\x86\Debug\WPFGovernance.pdb
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.exe
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.pdb
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.exe
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.pdb
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.baml
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.g.cs
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\App.g.cs
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance_MarkupCompile.cache
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.g.resources
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.Properties.Resources.resources
+\\oakcolo-mma01\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.csproj.GenerateResource.Cache
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.exe
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.pdb
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.exe
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.pdb
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.baml
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.g.cs
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\App.g.cs
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance_MarkupCompile.cache
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.g.resources
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.Properties.Resources.resources
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\p0184\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.csproj.GenerateResource.Cache
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.exe
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.pdb
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.exe
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\bin\Debug\WPFGovernance.pdb
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.baml
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\MainWindow.g.cs
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\App.g.cs
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance_MarkupCompile.cache
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.g.resources
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.Properties.Resources.resources
+\\oakcolo-tsm00\Alex_Backup_2\VSProjects\VA3\WPFGovernance\WPFGovernance\obj\x86\Debug\WPFGovernance.csproj.GenerateResource.Cache
