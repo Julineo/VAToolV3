@@ -50,25 +50,25 @@ namespace WPFGovernance
             int n;
             string[] files = Directory.GetFiles(Input);
             //Connect to database
-            //SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["MiscConnection"].ToString());
-            //try
-            //{
-            //    myConnection.Open();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.ToString());
-            //}
-            ////Trancate table in database
-            //try
-            //{
-            //    SqlCommand myCommand = new SqlCommand("TRUNCATE TABLE t0028_0", myConnection);
-            //    myCommand.ExecuteNonQuery();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.ToString());
-            //}
+            SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["MiscConnection"].ToString());
+            try
+            {
+                myConnection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            //Trancate table in database
+            try
+            {
+                SqlCommand myCommand = new SqlCommand("TRUNCATE TABLE t0028_0", myConnection);
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
 
 
             for (int i = 0; i < files.Length; i++)
@@ -84,6 +84,8 @@ namespace WPFGovernance
                         if (line.Substring(50, 22) == "PAY PERIOD ENDING DATE")//this is left hardcoded, transfer 35,8 to cfg file when have time
                         {
                             PPE = (line.Substring(73, 8)).Trim();
+                            //Converting 04/16/16 into 2016-04-16
+                            PPE = "20" + PPE.Substring(6, 2) + "-" + PPE.Substring(0, 2) + "-" + PPE.Substring(3, 2);
                         }
                     }
                     catch
@@ -132,19 +134,17 @@ namespace WPFGovernance
                         //    MessageBox.Show("Fuck:REMARKS " + line);
                         //REMARKS = "";
 
-                        //Converting 04/16/16 into 2016-04-16
-                        PPE = "20" + PPE.Substring(6, 2) + "-" + PPE.Substring(0, 2) + "-" + PPE.Substring(3, 2);
-                        MessageBox.Show("INSERT INTO t0028_0([Code],[SSN],[Name],[AmtDeducted],[PPE],[EMP ID],[LAST NAME],[FIRST NAME],[MIDDLE],[UpdatePhase],[ConstitID])VALUES('" + CODE + "','XXX-XX-XXXX','" + NAME + "'," + AMTDEDUCTED + ",'" + PPE + "',NULL,NULL,NULL,NULL,NULL,NULL)");
+                        //MessageBox.Show("INSERT INTO t0028_0([Code],[SSN],[Name],[AmtDeducted],[PPE],[EMP ID],[LAST NAME],[FIRST NAME],[MIDDLE],[UpdatePhase],[ConstitID])VALUES('" + CODE + "','XXX-XX-XXXX','" + NAME + "'," + AMTDEDUCTED + ",'" + PPE + "',NULL,NULL,NULL,NULL,NULL,NULL)");
                         //insert line into t0028_0 table in database CODE, NAME, AMTDEDUCTED, REMARKS, PPE);
-                        /*try
+                        try
                         {
-                            SqlCommand myCommand = new SqlCommand("INSERT INTO t0028_0([Code],[SSN],[Name],[AmtDeducted],[PPE],[EMP ID],[LAST NAME],[FIRST NAME],[MIDDLE],[UpdatePhase],[ConstitID])VALUES('" + CODE + "','XXX-XX-XXXX','" + NAME + "'," + AMTDEDUCTED + ",<PPE, smalldatetime,>,NULL,NULL,NULL,NULL,NULL,NULL)", myConnection);
+                            SqlCommand myCommand = new SqlCommand("INSERT INTO t0028_0([Code],[SSN],[Name],[AmtDeducted],[PPE],[EMP ID],[LAST NAME],[FIRST NAME],[MIDDLE],[UpdatePhase],[ConstitID])VALUES('" + CODE + "','XXX-XX-XXXX','" + NAME + "'," + AMTDEDUCTED + ",'" + PPE + "',NULL,NULL,NULL,NULL,NULL,NULL)", myConnection);
                             myCommand.ExecuteNonQuery();
                         }
                         catch (Exception ex)
                         {
                             MessageBox.Show(ex.ToString());
-                        }*/
+                        }
 
                         CODE = "";
                         NAME = "";
@@ -154,7 +154,31 @@ namespace WPFGovernance
                 }
 
             }
-            //execute sp0028_Main SP
+            //execute sp0028_Main SP with output folder as a parameter. All further logic in this SP.
+            try
+            {
+                //Making file output path readable to SQL server
+                string x = "EXEC sp0028_Main '" + Output + "'";
+                StringBuilder builder = new StringBuilder(x);
+                builder.Replace("\\", @"\");
+                string y = builder.ToString(); 
+                
+                SqlCommand myCommand = new SqlCommand(y, myConnection);
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            //Don't forget to clos connection
+            try
+            {
+                myConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             MessageBox.Show("Done! eIS!");
         }
 
